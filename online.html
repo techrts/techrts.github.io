@@ -1,0 +1,653 @@
+
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=
+	  1.0" name="viewport"></meta>
+<style>
+  *{
+  box-sizing: border-box;
+  }
+  
+  body{
+  background:#cccccc;
+  
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .form-element{
+  display:flex;
+  border:2px solid;
+  background:#ffffff;
+  border-radius:5px;
+  flex-direction: column;
+  padding:15px;
+  margin-bottom: 20px;
+  }
+  
+  .form-element span{
+  margin-bottom: 10px;
+  font-size:18px;
+  color:#1c1c1c;
+  font-weight:700;
+  }
+  
+  input, textarea{
+  border:1px solid #d50000;
+  line-height: 2;
+  padding:5px;
+  border-radius: 5px;
+  
+  }
+  
+  .radio-buttons label{
+  margin-top:10px;
+  cursor:pointer;
+  }
+  
+  
+  .fbutton{
+  padding-left:18px;
+  padding-right:18px;
+  padding-top:8px;
+  padding-bottom:8px;
+  color:#ffffff;
+  background:#d50000;
+  border-radius:5px;
+  border:none;
+  font-size:18px;
+  margin-bottom:25px;
+  }
+  .abcc{
+    background:#ffffff;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:8px;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+    color:#d50000;
+  }
+  .classSet1{
+  width:75%;
+  background:#ffffff;
+  padding:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .txtButton{
+   background:#ffffff;
+  padding:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  .vclass{
+  height:0px;
+  width:0px;
+  }
+ .timx{
+ font-size:18px;
+ font-weight:600;
+ padding:10px;
+ background:#6c6c6c;
+ }
+  </style>
+  </head>
+  <body onload="startTime()">
+  
+   <script type="text/javascript">
+	var submitted=false;
+    function myFunctio(){
+      document.getElementById("btn").style.visibility = "hidden";
+      document.getElementById("load").style.visibility = "visible";
+      setTimeout(function(){
+       document.getElementById("s12").style.display="none";
+      },5000);
+	  
+    }
+	function myFunction1(){
+      document.getElementById("btnn1").style.visibility = "hidden";
+      document.getElementById("loadd1").style.visibility = "visible";
+      setTimeout(function(){
+       document.getElementById("s11").style.display="none";
+      },5000);
+	  
+    }
+	function myFunction3(){
+      document.getElementById("btnn3").style.visibility = "hidden";
+      document.getElementById("loadd3").style.visibility = "visible";
+      setTimeout(function(){
+       document.getElementById("s13").style.display="none";
+      },5000);
+	  
+    }
+	function myFunction4(){
+      document.getElementById("btnn4").style.visibility = "hidden";
+      document.getElementById("loadd4").style.visibility = "visible";
+      setTimeout(function(){
+       document.getElementById("s14").style.display="none";
+      },5000);
+	  
+    }
+	function myFunction5(){
+      document.getElementById("btnn5").style.visibility = "hidden";
+      document.getElementById("loadd5").style.visibility = "visible";
+      setTimeout(function(){
+       document.getElementById("s15").style.display="none";
+	   location.replace("https://www.google.com");
+      },5000);
+	  
+    }
+    
+    </script>
+   
+	<script>
+	function getAndSetVal(){
+	var txt1=document.getElementById('txt').value;
+	document.getElementById('txt2').value=txt1;
+	document.getElementById('txt3').value=txt1;
+	document.getElementById('txt4').value=txt1;
+	document.getElementById('txt5').value=txt1;
+	document.getElementById('txt6').value=txt1;
+	document.getElementById("txtBu").style.display ="none";
+	document.getElementById("allclass").style.visibility = "visible";
+	
+	document.getElementById('fs1').style.display = "block";
+	
+	}
+
+	</script>
+	<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  
+  if(today.getMinutes()>=33 && today.getMinutes()<34){
+  document.getElementById('fs1').style.display="none";
+  document.getElementById('fs2').style.display="block";
+  document.getElementById('set1').style.display="block";
+  document.getElementById('s1').innerHTML= today.getSeconds() + "|60";
+  }else{
+  document.getElementById('set1').style.display="none";
+  }
+  if(today.getMinutes()>=25 && today.getMinutes()<26){
+  document.getElementById('fs2').style.display="none";
+  document.getElementById('fs3').style.display="block";
+  document.getElementById('set2').style.display="block";
+  document.getElementById('s2').innerHTML= today.getSeconds() + "|60";
+  }else{
+  document.getElementById('set2').style.display="none";
+  }
+  
+  
+  if(today.getMinutes()>=26 && today.getMinutes()<27){
+  document.getElementById('fs3').style.display="none";
+  document.getElementById('fs4').style.display="block";
+  document.getElementById('set3').style.display="block";
+  document.getElementById('s3').innerHTML= today.getSeconds() + "|60";
+  }else{
+  document.getElementById('set3').style.display="none";
+  }
+  
+  
+  if(today.getMinutes()>=27 && today.getMinutes()<28){
+  document.getElementById('fs4').style.display="none";
+  document.getElementById('fs5').style.display="block";
+  document.getElementById('set4').style.display="block";
+  document.getElementById('s4').innerHTML= today.getSeconds() + "|60";
+  }else{
+  document.getElementById('set4').style.display="none";
+  }
+  
+  
+  if(today.getMinutes()>=40 && today.getMinutes()<42){
+  document.getElementById('fs5').style.display="none";
+  document.getElementById('set5').style.display="block";
+  document.getElementById('s5').innerHTML= today.getSeconds() + "|60";
+  }else{
+  document.getElementById('set5').style.display="none";
+  }
+  
+  if(today.getMinutes()>=43){
+  location.replace("https://www.google.com");
+  }
+  
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txtx').innerHTML =
+ "current time - " + h + ":" + m + ":" + s +"pm";
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+function fun1(){
+if(submitted){
+document.getElementById('fs2').style.display = "block";
+document.getElementById('set1').style.display = "none";
+}
+}
+
+</script>
+
+	<div class="classSet1">
+	
+	
+	<div id="txtx"></div>
+	
+
+	</div>
+	<div class="classSet1">
+	<div class="allset" id="fs1" style = "display: none;">
+	start at 3:15:00 pm
+	</div>
+	<div class="allset" id="fs2" style = "display: none;">
+	 next question starts at 3:17:00 pm
+	</div>
+	<div class="allset" id="fs3" style = "display: none;">
+	next question start at 3:19:00 pm
+	</div>
+	<div class="allset" id="fs4" style = "display: none;">
+	next question start at 3:21:00 pm
+	</div>
+	<div class="allset" id="fs5" style = "display: none;">
+	next question start at 3:23:00 pm
+	</div>
+	</div>
+	<br>
+	
+	<div class="txtButton" id="txtBu">
+	<span>Please enter your name before answering: </span><br>
+	<input type="text" id="txt" name="txt" placeholder="Name" onclick="this.value=""/>
+	<br>
+	<br>
+	<button class = "fbutton" onclick="getAndSetVal();"> Next </button>
+	</div>
+	
+	<div class="allCl" id="allclass" style = "visibility: hidden;">
+	
+	
+	<div class="classSet1" id="set1">
+	
+	<div >
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSebZjgG7Z7QZGzX25ZHj3sFVgJqBWWqf0cLwM1POupQDVNY2Q/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+	 <div id="s11">
+	 <div class="timx" id="s1"></div>
+	  
+	  <div class="form-elemen" style = "visibility: hidden;">
+		<span>
+		 name
+		</span>
+		<input name="entry.616863713" placeholder="Name" required="" type="text" id="txt2" readonly />
+
+	  </div>
+	  
+	  <div class="cl-box">
+	  
+	  <div class="form-element radio-buttons">
+		<span>Who is the incharge of weighing </span>
+		<label for="Refree">
+		  <input id="Refree" name="entry.24903713" required="" type="radio" value="Refree" >
+		  <span>Refree</span>
+		
+		</label>
+		<label for="Chief refree">
+		  <input id="Chief refree" name="entry.24903713" type="radio" value="Chief refree" >
+		  <span>Chief refree</span>
+		
+		</label>
+		<label for="Head judge">
+		  <input id="Head judge" name="entry.24903713" type="radio" value="Head judge" >
+		  <span>Head judge</span>
+		
+		</label>
+		<label for="chief registrar">
+		  <input id="chief registrar" name="entry.24903713" type="radio" value="chief registrar" >
+		  <span>chief registrar</span>
+		
+		</label>
+	  </div>
+      
+      <div class="form-element radio-buttons">
+		<span>Sanda means </span>
+		<label for="Kungfu">
+		  <input id="Kungfu" name="entry.1300756622" required="" type="radio" value="Kungfu" >
+		  <span>Kungfu</span>
+		
+		</label>
+		<label for="Nanquan">
+		  <input id="Nanquan" name="entry.1300756622" type="radio" value="Nanquan" >
+		  <span>Nanquan</span>
+		
+		</label>
+		<label for="Hand exercise">
+		  <input id="Hand exercise" name="entry.1300756622" type="radio" value="Hand exercise" >
+		  <span>Hand exercise</span>
+		
+		</label>
+		<label for="three art">
+		  <input id="three art" name="entry.1300756622" type="radio" value="three art" >
+		  <span>three art</span>
+		
+		</label>
+        
+	  </div>
+      
+	  </div>
+      <div class="abcc" id = "loadd1" style = "visibility: hidden;"> Please Wait.....</div>
+	  
+	  <input type="submit" class = "fbutton" id ="btnn1" onclick = "myFunction1()" value = "Submit">
+	  
+	  </div>
+	</form>
+	</div>
+	</div>
+	<br>
+	
+	<div class="classSet1" id="set2" style="display:none;">
+	
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://www.google.com';}"></iframe>
+	<form action=" https://docs.google.com/forms/d/e/1FAIpQLScJsBXWmS_W_jCOEvbUnZ7Jap1dk7lktNF0R61Eg6DkTJJlmg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"> 
+	 <div id="s12">
+	 <div id="s2"></div>
+	 <div class="form-elemen" style = "visibility: hidden;">
+		<span>
+		 name
+		</span>
+		<input name="entry.2104381329" placeholder="Name" required="" type="text" id="txt3" readonly />
+
+	  </div>
+	  
+	  <div class="cl-box">
+	  
+	  <div class="form-element radio-buttons">
+		<span>Maximum points in sanda is </span>
+		<label for="100">
+		  <input id="100" name="entry.2133766927" required="" type="radio" value="100" >
+		  <span>100</span>
+		
+		</label>
+		<label for="10">
+		  <input id="10" name="entry.2133766927" type="radio" value="10" >
+		  <span>10</span>
+		
+		</label>
+		<label for="00">
+		  <input id="00" name="entry.2133766927" type="radio" value="00" >
+		  <span>00</span>
+		
+		</label>
+		<label for="50">
+		  <input id="50" name="entry.2133766927" type="radio" value="50" >
+		  <span>50</span>
+		
+		</label>
+	  </div>
+      
+      <div class="form-element radio-buttons">
+		<span>sada is part of </span>
+		<label for="Youth Olympics">
+		  <input id="Youth Olympics" name="entry.1394370812" required="" type="radio" value="Youth Olympics" >
+		  <span>Youth Olympics</span>
+		
+		</label>
+		<label for="commonwealth games">
+		  <input id="commonwealth games" name="entry.1394370812" type="radio" value="commonwealth games" >
+		  <span>commonwealth games</span>
+		
+		</label>
+		<label for="taolu">
+		  <input id="taolu" name="entry.1394370812" type="radio" value="taolu" >
+		  <span>taolu</span>
+		
+		</label>
+		<label for="wushu">
+		  <input id="wushu" name="entry.1394370812" type="radio" value="wushu" >
+		  <span>wushu</span>
+		
+		</label>
+        
+	  </div>
+      
+	  </div>
+      <div class="abcc" id = "load" style = "visibility: hidden;"> Please Wait.....</div>
+	  
+	  <input type="submit" class = "fbutton" id ="btn" onclick = "myFunctio()" value = "Submit">
+	  
+	  </div>
+	</form>
+	</div>
+	<br>
+	
+	<div class="classSet1" id="set3" style="display:none;">
+	<h2>jkhdk</h2>
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+	<form action=" https://docs.google.com/forms/d/e/1FAIpQLSf1CrhWcs5174UaXPVwJkhSMrVLXvCkA4E6Io-d5v3XQ3NwTw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"> 
+	  <div id="s13">
+	  <div id="s3"></div>
+	 <div class="form-elemen" style = "visibility: hidden;">
+		<span>
+		 name
+		</span>
+		<input name="entry.270328467" placeholder="Name" required="" type="text" id="txt4" readonly />
+
+	  </div>
+	  
+	  <div class="cl-box">
+	  
+	  <div class="form-element radio-buttons">
+		<span>Who proved injury</span>
+		<label for="chief refree">
+		  <input id="chief refree" name="entry.1622983951" required="" type="radio" value="chief refree" >
+		  <span>chief refree</span>
+		
+		</label>
+		<label for="coach">
+		  <input id="coach" name="entry.1622983951" type="radio" value="coach" >
+		  <span>coach</span>
+		
+		</label>
+		<label for="refree">
+		  <input id="refree" name="entry.1622983951" type="radio" value="refree" >
+		  <span>refree</span>
+		
+		</label>
+		<label for="platform doctor">
+		  <input id="platform doctor" name="entry.1622983951" type="radio" value="platform doctor" >
+		  <span>platform doctor</span>
+		
+		</label>
+	  </div>
+      
+      <div class="form-element radio-buttons">
+		<span>How may chief refree is there in sanda competiton </span>
+		<label for="01">
+		  <input id="01" name="entry.1261366421" required="" type="radio" value="01" >
+		  <span>01</span>
+		
+		</label>
+		<label for="05">
+		  <input id="05" name="entry.1261366421" type="radio" value="05" >
+		  <span>05</span>
+		
+		</label>
+		<label for="03">
+		  <input id="03" name="entry.1261366421" type="radio" value="03" >
+		  <span>03</span>
+		
+		</label>
+		<label for="02">
+		  <input id="02" name="entry.1261366421" type="radio" value="02" >
+		  <span>02</span>
+		
+		</label>
+        
+	  </div>
+      
+	  </div>
+      <div class="abcc" id = "loadd3" style = "visibility: hidden;"> Please Wait.....</div>
+	  
+	  <input type="submit" class = "fbutton" id ="btnn3" onclick = "myFunction3()" value = "Submit">
+	  </div>
+	  
+	</form>
+	</div>
+	
+	<div class="classSet1" id="set4" style="display:none;">
+	<h2>jkhdk</h2>
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+	<form action=" https://docs.google.com/forms/d/e/1FAIpQLSfdC8yYkFbGSmPKdliioOdpfolVt7sIXm7p6NVpTgt3HO_JPA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"> 
+	  <div id="s14">
+	  <div id="s4"></div>
+	  <div class="form-elemen" style = "visibility: hidden;">
+		<span>
+		 name
+		</span>
+		<input name="entry.270328467" placeholder="Name" required="" type="text" id="txt5" readonly />
+
+	  </div>
+	  
+	  <div class="cl-box">
+	  
+	  <div class="form-element radio-buttons">
+		<span>One can appeal after how many minutus after the competiton </span>
+		<label for="10">
+		  <input id="10" name="entry.1622983951" required="" type="radio" value="10" >
+		  <span>10</span>
+		
+		</label>
+		<label for="20">
+		  <input id="20" name="entry.1622983951" type="radio" value="20" >
+		  <span>20</span>
+		
+		</label>
+		<label for="40">
+		  <input id="40" name="entry.1622983951" type="radio" value="40" >
+		  <span>40</span>
+		
+		</label>
+		<label for="15">
+		  <input id="15" name="entry.1622983951" type="radio" value="15" >
+		  <span>15</span>
+		
+		</label>
+	  </div>
+      
+      <div class="form-element radio-buttons">
+		<span>What is the code of heel off carpet (mabu)</span>
+		<label for="11">
+		  <input id="11" name="entry.1261366421" required="" type="radio" value="11" >
+		  <span>11</span>
+		
+		</label>
+		<label for="51">
+		  <input id="51" name="entry.1261366421" type="radio" value="51" >
+		  <span>51</span>
+		
+		</label>
+		<label for="31">
+		  <input id="31" name="entry.1261366421" type="radio" value="31" >
+		  <span>31</span>
+		
+		</label>
+		<label for="41">
+		  <input id="41" name="entry.1261366421" type="radio" value="41" >
+		  <span>41</span>
+		
+		</label>
+        
+	  </div>
+      
+	  </div>
+      <div class="abcc" id = "loadd4" style = "visibility: hidden;"> Please Wait.....</div>
+	  
+	  <input type="submit" class = "fbutton" id ="btnn4" onclick = "myFunction4()" value = "Submit">
+	  
+	  </div>
+	</form>
+	</div>
+	
+	<div class="classSet1" id="set5" style="display:none;">
+	<h2>jkhdk</h2>
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='';}"></iframe>
+	<form action=" https://docs.google.com/forms/d/e/1FAIpQLSdakmhdGu8xQQH6qqyoBSF1bc3SLn98J2yksOtEaGBXa5zKyA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"> 
+	 <div id="s15">
+	 <div id="s5"></div>
+	 <div class="form-elemen" style = "visibility: hidden;">
+		<span>
+		 name
+		</span>
+		<input name="entry.270328467" placeholder="Name" required="" type="text" id="txt6" readonly />
+
+	  </div>
+	  
+	  <div class="cl-box">
+	  
+	  <div class="form-element radio-buttons">
+		<span>Who can do forcible counting </span>
+		<label for="plateform judge">
+		  <input id="plateform judge" name="entry.1622983951" required="" type="radio" value="plateform judge" >
+		  <span>plateform judge</span>
+		
+		</label>
+		<label for="sideline judge">
+		  <input id="sideline judge" name="entry.1622983951" type="radio" value="sideline judge" >
+		  <span>sideline judge</span>
+		
+		</label>
+		<label for="head judge">
+		  <input id="head judge" name="entry.1622983951" type="radio" value="head judge" >
+		  <span>head judge</span>
+		
+		</label>
+		<label for="scorer">
+		  <input id="scorer" name="entry.1622983951" type="radio" value="scorer" >
+		  <span>scorer</span>
+		
+		</label>
+	  </div>
+      
+      <div class="form-element radio-buttons">
+		<span>Who take care of the time </span>
+		<label for="recorder">
+		  <input id="recorder" name="entry.1261366421" required="" type="radio" value="recorder" >
+		  <span>recorder</span>
+		
+		</label>
+		<label for="time keeper">
+		  <input id="time keeper" name="entry.1261366421" type="radio" value="time keeper" >
+		  <span>time keeper</span>
+		
+		</label>
+		<label for="platform referee">
+		  <input id="platform referee" name="entry.1261366421" type="radio" value="platform referee" >
+		  <span>platform referee</span>
+		
+		</label>
+		<label for="Head Judge">
+		  <input id="Head Judge" name="entry.1261366421" type="radio" value="Head Judge" >
+		  <span>Head Judge</span>
+		
+		</label>
+        
+	  </div>
+      
+	  </div>
+      <div class="abcc" id = "loadd5" style = "visibility: hidden;"> Please Wait.....</div>
+	  
+	  <input type="submit" class = "fbutton" id ="btnn5" onclick = "myFunction5()" value = "Submit">
+	  
+	  </div>
+	</form>
+	</div>
+	</div>
+	
+	
+	
+  </body>
+  
+</html>
